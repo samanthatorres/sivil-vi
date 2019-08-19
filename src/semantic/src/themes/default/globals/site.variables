@@ -51,11 +51,11 @@
     Brand Colors
 --------------------*/
 
-@primaryColor        : @blue;
-@secondaryColor      : @black;
+@primaryColor        : @brown;
+@secondaryColor      : @blue;
 
-@lightPrimaryColor   : @lightBlue;
-@lightSecondaryColor : @lightBlack;
+@lightPrimaryColor   : @lightBrown;
+@lightSecondaryColor : @lightBlue;
 
 /*--------------
   Page Heading
@@ -75,15 +75,15 @@
 ---------------*/
 
 /* This adjusts the default form input across all elements */
-@inputBackground        : @white;
+@inputBackground        : @offWhite;
 @inputVerticalPadding   : @relative11px;
 @inputHorizontalPadding : @relative14px;
 @inputPadding           : @inputVerticalPadding @inputHorizontalPadding;
 
 /* Input Text Color */
 @inputColor: @textColor;
-@inputPlaceholderColor: lighten(@inputColor, 75);
-@inputPlaceholderFocusColor: lighten(@inputColor, 45);
+@inputPlaceholderColor: @primaryColor;
+@inputPlaceholderFocusColor: @textColor;
 
 /* Line Height Default For Inputs in Browser (Descenders are 17px at 14px base em) */
 @inputLineHeight: unit((17 / 14), em);
@@ -121,11 +121,11 @@
         Page
 --------------------*/
 
-@pageBackground      : #FFFFFF;
+@pageBackground      : @offWhite;
 @pageOverflowX       : hidden;
 
 @lineHeight          : 1.4285em;
-@textColor           : rgba(0, 0, 0, 0.87);
+@textColor           : @black;
 
 /*-------------------
       Paragraph
@@ -138,7 +138,7 @@
        Links
 --------------------*/
 
-@linkColor           : #4183C4;
+@linkColor           : @blue;
 @linkUnderline       : none;
 @linkHoverColor      : darken(saturate(@linkColor, 20), 15, relative);
 @linkHoverUnderline  : @linkUnderline;
@@ -226,13 +226,13 @@
 @olive            : #B5CC18;
 @green            : #21BA45;
 @teal             : #00B5AD;
-@blue             : #2185D0;
+@blue             : #008BE4;
 @violet           : #6435C9;
 @purple           : #A333C8;
 @pink             : #E03997;
-@brown            : #A5673F;
-@grey             : #767676;
-@black            : #1B1C1D;
+@brown            : #897881;
+@grey             : #B29890;
+@black            : #211A1F;
 
 /*---  Light Colors  ---*/
 @lightRed         : #FF695E;
@@ -245,13 +245,13 @@
 @lightViolet      : #A291FB;
 @lightPurple      : #DC73FF;
 @lightPink        : #FF8EDF;
-@lightBrown       : #D67C1C;
+@lightBrown       : #B29890;
 @lightGrey        : #DCDDDE;
 @lightBlack       : #545454;
 
 /*---   Neutrals  ---*/
 @fullBlack        : #000000;
-@offWhite         : #F9FAFB;
+@offWhite         : #FBF9FA;
 @darkWhite        : #F3F4F5;
 @midWhite         : #DCDDDE;
 @white            : #FFFFFF;
