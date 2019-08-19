@@ -6,13 +6,13 @@
        Fonts
 --------------------*/
 
-@fontName          : 'Lato';
+@fontName          : 'PT Serif';
 @fontSmoothing     : antialiased;
 
-@headerFont        : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;
-@pageFont          : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+@headerFont        : 'Anton', Arial, Helvetica, sans-serif;
+@pageFont          : @fontName, Courier New, Helvetica, sans-serif;
 
-@googleFontName    : @fontName;
+@googleFontName    : 'Anton|PT+Serif';
 @importGoogleFonts : true;
 @googleFontSizes   : '400,700,400italic,700italic';
 @googleSubset      : 'latin';
@@ -32,7 +32,7 @@
 @emSize   : 14px;
 
 /* The size of page text  */
-@fontSize : 14px;
+@fontSize : 16px;
 
 
 /*-------------------
@@ -61,7 +61,7 @@
   Page Heading
 ---------------*/
 
-@headerFontWeight : @bold;
+@headerFontWeight : @normal;
 @headerLineHeight : unit((18 / 14), em);
 
 @h1 : unit((28 / 14), rem);
