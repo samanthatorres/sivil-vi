@@ -1,0 +1,12 @@
+.navbar-container { 
+    width: 100%; 
+    background-color: #897881;
+    height: 60px; 
+}
+h2 {
+    font-family: 'PT Serif', serif;
+    color: #FBF9FA;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 60px;
+}
