@@ -12,6 +12,7 @@ class App extends Component {
       <div>
 
         <Navbar />
+        <h1>Prepare for War</h1>
 
       </div>
     );
