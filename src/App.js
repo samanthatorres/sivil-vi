@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 /* import { Button, Container, Divider, Grid, Header, Image, Menu, Segment } from 'semantic-ui-react' */
+import { Container } from 'semantic-ui-react'
 import Navbar from './components/navbar'
 
 import './semantic/dist/semantic.min.css';
@@ -12,7 +13,9 @@ class App extends Component {
       <div>
 
         <Navbar />
-        <h1>Prepare for War</h1>
+        <Container>
+          <h1>Prepare for War</h1>
+        </Container>
 
       </div>
     );

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container } from 'semantic-ui-react'
+import styled from 'styled-components'
 
 import '../semantic/dist/semantic.min.css';
 import './navbar.css';
