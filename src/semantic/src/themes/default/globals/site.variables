@@ -6,13 +6,13 @@
        Fonts
 --------------------*/
 
-@fontName          : 'PT Serif';
+@fontName          : 'Lato';
 @fontSmoothing     : antialiased;
 
-@headerFont        : 'Anton', Arial, Helvetica, sans-serif;
-@pageFont          : @fontName, Courier New, Helvetica, sans-serif;
+@headerFont        : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+@pageFont          : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;
 
-@googleFontName    : 'Anton|PT+Serif';
+@googleFontName    : @fontName;
 @importGoogleFonts : true;
 @googleFontSizes   : '400,700,400italic,700italic';
 @googleSubset      : 'latin';
@@ -32,7 +32,7 @@
 @emSize   : 14px;
 
 /* The size of page text  */
-@fontSize : 16px;
+@fontSize : 14px;
 
 
 /*-------------------
@@ -51,17 +51,17 @@
     Brand Colors
 --------------------*/
 
-@primaryColor        : @brown;
-@secondaryColor      : @blue;
+@primaryColor        : @blue;
+@secondaryColor      : @black;
 
-@lightPrimaryColor   : @lightBrown;
-@lightSecondaryColor : @lightBlue;
+@lightPrimaryColor   : @lightBlue;
+@lightSecondaryColor : @lightBlack;
 
 /*--------------
   Page Heading
 ---------------*/
 
-@headerFontWeight : @normal;
+@headerFontWeight : @bold;
 @headerLineHeight : unit((18 / 14), em);
 
 @h1 : unit((28 / 14), rem);
@@ -75,15 +75,15 @@
 ---------------*/
 
 /* This adjusts the default form input across all elements */
-@inputBackground        : @offWhite;
+@inputBackground        : @white;
 @inputVerticalPadding   : @relative11px;
 @inputHorizontalPadding : @relative14px;
 @inputPadding           : @inputVerticalPadding @inputHorizontalPadding;
 
 /* Input Text Color */
 @inputColor: @textColor;
-@inputPlaceholderColor: @primaryColor;
-@inputPlaceholderFocusColor: @textColor;
+@inputPlaceholderColor: lighten(@inputColor, 75);
+@inputPlaceholderFocusColor: lighten(@inputColor, 45);
 
 /* Line Height Default For Inputs in Browser (Descenders are 17px at 14px base em) */
 @inputLineHeight: unit((17 / 14), em);
@@ -121,11 +121,11 @@
         Page
 --------------------*/
 
-@pageBackground      : @offWhite;
+@pageBackground      : #FFFFFF;
 @pageOverflowX       : hidden;
 
 @lineHeight          : 1.4285em;
-@textColor           : @black;
+@textColor           : rgba(0, 0, 0, 0.87);
 
 /*-------------------
       Paragraph
@@ -138,7 +138,7 @@
        Links
 --------------------*/
 
-@linkColor           : @blue;
+@linkColor           : #4183C4;
 @linkUnderline       : none;
 @linkHoverColor      : darken(saturate(@linkColor, 20), 15, relative);
 @linkHoverUnderline  : @linkUnderline;
@@ -226,13 +226,13 @@
 @olive            : #B5CC18;
 @green            : #21BA45;
 @teal             : #00B5AD;
-@blue             : #008BE4;
+@blue             : #2185D0;
 @violet           : #6435C9;
 @purple           : #A333C8;
 @pink             : #E03997;
-@brown            : #897881;
-@grey             : #B29890;
-@black            : #211A1F;
+@brown            : #A5673F;
+@grey             : #767676;
+@black            : #1B1C1D;
 
 /*---  Light Colors  ---*/
 @lightRed         : #FF695E;
@@ -245,13 +245,13 @@
 @lightViolet      : #A291FB;
 @lightPurple      : #DC73FF;
 @lightPink        : #FF8EDF;
-@lightBrown       : #B29890;
+@lightBrown       : #D67C1C;
 @lightGrey        : #DCDDDE;
 @lightBlack       : #545454;
 
 /*---   Neutrals  ---*/
 @fullBlack        : #000000;
-@offWhite         : #FBF9FA;
+@offWhite         : #F9FAFB;
 @darkWhite        : #F3F4F5;
 @midWhite         : #DCDDDE;
 @white            : #FFFFFF;

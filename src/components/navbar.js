@@ -1,12 +1,12 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Container } from 'semantic-ui-react'
 
 import '../semantic/dist/semantic.min.css';
-import './navbar.css';
+import '../styles/navbar.css';
 
 
 
-class Navbar extends React.Component {
+class Navbar extends Component {
    render() {
       return (
          <div>
